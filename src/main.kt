@@ -30,10 +30,12 @@ private fun conn(url:URL):String {
 	}
 	catch (e:MalformedURLException) {
 //		e.printStackTrace()
+		fin = false
 		return "MalformedURLException"
 	}
 	catch (e:IOException) {
 //		e.printStackTrace()
+		fin = false
 		return "无法访问"
 	}
 
